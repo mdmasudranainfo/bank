@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-5xl text-center">
+        Let's go some
+        <span class="font-semibold text-violet-600">Mooooooooony </span>!!!
+      </h2>
+    </header>
+    <main class="">
+      <!-- blance section -->
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+          <div class="bg-sky-600 p-5 rounded">
+            <h2 class="text-3xl font-semibold">Deposit</h2>
+            <h3 class="text-3xl font-semibold">
+              $<span id="dipo-amaunt">00</span>
+            </h3>
+          </div>
+          <div class="bg-blue-600 p-5 rounded">
+            <h2 class="text-3xl font-semibold">Withdrow</h2>
+            <h3 class="text-3xl font-semibold">
+              $<span id="total-withdrow">00</span>
+            </h3>
+          </div>
+          <div class="bg-green-600 p-5 rounded">
+            <h2 class="text-3xl font-semibold">Balance</h2>
+            <h3 class="text-3xl font-semibold">
+              $ <span id="total-balance">1240</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!-- deposit and widthdrow -->
+      <section class="mx-auto w-9/12 mt-12">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-yellow-700 p-5 rounded text-center">
+            <h2 class="text-3xl font-semibold text-center mb-2 text-white">
+              Deposit
+            </h2>
+            <input
+              class="w-9/12 block mb-3 p-1 rounded mx-auto text-center"
+              type="number"
+              name=""
+              id="diposit-input"
+              placeholder="Please Enter Your Amaunt"
+            />
+            <button
+              id="diposit-btn"
+              class="bg-violet-600 py-1 px-3 text-white rounded hover:bg-cyan-700"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-yellow-600 p-5 rounded text-center">
+            <h2 class="text-3xl text-white font-semibold text-center mb-2">
+              Withdrow
+            </h2>
+            <input
+              class="w-9/12 block mb-3 p-1 rounded mx-auto text-center"
+              type="number"
+              name=""
+              id="widthdrow-input"
+              placeholder="Please Enter Your Amaunt"
+            />
+            <button
+              id="widthdrow-btn"
+              class="bg-violet-600 py-1 px-3 text-white rounded hover:bg-cyan-700"
+            >
+              Withdrow
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdrow.js"></script>
+  </body>
+</html>
