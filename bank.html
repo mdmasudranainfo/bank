@@ -17,7 +17,9 @@
     <main class="">
       <!-- blance section -->
       <section class="mt-12">
-        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+        <div
+          class="grid md:grid-cols-3 sm:grid-cols-1 gap-4 w-9/12 mx-auto text-white"
+        >
           <div class="bg-sky-600 p-5 rounded">
             <h2 class="text-3xl font-semibold">Deposit</h2>
             <h3 class="text-3xl font-semibold">
@@ -40,13 +42,13 @@
       </section>
       <!-- deposit and widthdrow -->
       <section class="mx-auto w-9/12 mt-12">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
           <div class="bg-yellow-700 p-5 rounded text-center">
             <h2 class="text-3xl font-semibold text-center mb-2 text-white">
               Deposit
             </h2>
             <input
-              class="w-9/12 block mb-3 p-1 rounded mx-auto text-center"
+              class="w-9/12 block mb-3 p-1 rounded mx-auto text-center focus:outline-none"
               type="number"
               name=""
               id="diposit-input"
@@ -64,7 +66,7 @@
               Withdrow
             </h2>
             <input
-              class="w-9/12 block mb-3 p-1 rounded mx-auto text-center"
+              class="w-9/12 block mb-3 p-1 rounded mx-auto text-center focus:outline-none"
               type="number"
               name=""
               id="widthdrow-input"
